@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_detail_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/collect_news_detail_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/color_D32204">
+
+        <TextView
+            android:id="@+id/collect_news_detail_rl_tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dip"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/collect_news_detail_rl_btn_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#00000000" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/collect_news_detail_rl">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFE7E7E7"
+            android:fadingEdge="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/collect_news_detail_ll_pb"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="16dip"
+                        android:layout_height="16dip"
+                        android:layout_marginLeft="152dip"
+                        android:layout_marginTop="3dip"
+                        android:clickable="false" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/line" />
+                </LinearLayout>
+
+                <WebView
+                    android:id="@+id/collect_news_detail_ll_wv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dip" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

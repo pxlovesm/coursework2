@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_body_list_item_selector">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dip"
+        android:layout_height="85dip"
+        android:layout_margin="5dip" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="227dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toStartOf="@+id/btn_detail"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_below"
+        android:layout_width="227dp"
+        android:layout_height="21dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="3dip"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toStartOf="@+id/btn_detail"
+        android:gravity="right"
+        android:textColor="#9A9A9A" />
+
+    <ImageView
+        android:id="@+id/btn_detail"
+        android:layout_width="22dp"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/tv_below"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:paddingTop="85dip"
+        android:src="@drawable/main_category_button" />
+
+</RelativeLayout>

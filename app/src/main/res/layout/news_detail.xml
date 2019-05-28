@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/new_detail_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/news_detail_hand_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@color/color_D32204">
+
+        <Button
+            android:id="@+id/news_detail_hand_relative_btn_left"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/zuo" />
+
+        <TextView
+            android:id="@+id/news_detail_hand_relative_tv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginVertical="13dip"
+            android:layout_toEndOf="@+id/news_detail_hand_relative_btn_left"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/news_detail_hand_relative_btn_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:background="#00000000" />
+
+        <Button
+            android:id="@+id/news_detail_hand_relative_btn_right"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dip"
+            android:background="@drawable/you" />
+    </RelativeLayout>
+
+
+    <ViewFlipper
+        android:id="@+id/news_detail_body_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/news_detail_hand_relative"
+        android:layout_marginBottom="40dip"></ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/news_detail_bottom_ll_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/news_detail_bottom_ll_01_et_comment"
+                android:layout_width="290dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="2dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|" />
+
+            <!--发表-->
+            <Button
+                android:id="@+id/news_detail_bottom_ll_01_btn_send"
+                android:layout_width="70dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:text="发表" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/news_detail_bottom_ll_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/news_detail_bottom_ll_02_ib_write"
+                android:layout_width="290dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="2dip"
+                android:background="#00000000"
+                android:src="@drawable/button" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dip"
+                android:text="|" />
+
+            <!--收藏-->
+            <Button
+                android:id="@+id/news_detail_bottom_ll_02_btn_collect"
+                android:layout_width="60dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="2dip"
+                android:text="收藏" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

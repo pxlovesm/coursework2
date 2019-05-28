@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_category_item"
+    android:layout_width="60dip"
+    android:layout_height="35dip"
+    android:background="@drawable/main_category_item_selector_style"
+    android:gravity="center"
+    android:singleLine="true"
+    android:textSize="15sp"
+    android:textStyle="bold"></TextView>

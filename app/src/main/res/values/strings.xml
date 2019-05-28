@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyNews</string>
+    <string name="issue">http://10.0.2.2:8080/news/api/</string>
+    <string-array name="main_category_item">
+        <item>头条</item>
+        <item>社会</item>
+        <item>国内</item>
+        <item>国际</item>
+        <item>娱乐</item>
+        <item>体育</item>
+        <item>军事</item>
+        <item>科技</item>
+        <item>财经</item>
+        <item>时尚</item>
+        <item>其他</item>
+    </string-array>
+</resources>
